@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -207,24 +207,6 @@ a {
                     <span class="badge" style="padding-right: 10px;background-color:#AEDE94">Contestada </span>
                   </li>
             </ul>
-            <h2>Mis cursos:</h2>
-            <ul class="list-group">
-                  <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"> Alumno</span>
-                <button class="btn btn-link "> 
-                    CC5401-1 Ingeniería de Software II
-                 </button></li>
-                 <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"> Alumno</span>
-                <button class="btn btn-link "> 
-                    CC4401-1 Ingeniería de Software I
-                </button></li>
-                <li class="list-group-item"><span class="glyphicon glyphicon-education" aria-hidden="true"> Auxiliar</span>
-                <button class="btn btn-link "> 
-                   CC1002-2 Introducción a la Programación
-                </button></li>
-                <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"> Alumno</span>
-                <button class="btn btn-link "> 
-                    IN3301-1 Evaluación de Proyectos
-                </button></li>
           </div>
     </div>
     
@@ -232,7 +214,20 @@ a {
       
         <h1 class="page-header">Gestión</h1>
         <div class="panel-group">
+            
+
+						<form>
+                                                <input type="text" placeholder="Buscar alumno" name="buscar">
+                                                <button type="submit"><span class="glyphicon glyphicon-search" ></span></button>
+                                                </form>
+
+
+        </div>
+
+        <div class="panel-group">
+
           <div class="panel panel-default">
+
             <div class="panel-heading">Gestionar Alumnos</div>
             <div class="panel-body"><ul style="list-style-type:none">
             <li><a href="#" style="color:green">
@@ -261,6 +256,7 @@ a {
     <div class="panel-group">
     <div class="panel panel-default">
       <div class="panel-heading">Gestionar Grupos</div>
+
       <div class="panel-body"><ul style="list-style-type:none">
       <li><a href="#" style="color:green">
           <span class="badge"> <span class="glyphicon glyphicon-plus"
@@ -306,8 +302,10 @@ a {
           " ></span> Eliminar Coevaluaciones</span>
     
         </a></li> </ul></div>
+    </div>
+         <button type="button" class="btn btn-success btn-lg btn-block "  style="margin-top: 10px" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-plus" ></span>Agregar Curso Nuevo</button>
 
-   
   </div>
   </div>
 
