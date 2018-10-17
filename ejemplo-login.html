@@ -15,6 +15,102 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+
+}
+table {
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 35%;
+    alignment: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+  .container {
+      padding: 80px 120px;
+  }
+  /* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #343434;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #fff7ff !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #9b3db7 !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #b83bf9 !important;
+}
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: #dacbfd !important;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #b462d8;
+}
+a {
+  color: #8814b1;
+  text-decoration: none;
+}/* On hover, the links will turn white */
+        a:hover {
+    color: #3f3651 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6c4da9;
+    border-color: #6d5e8c;
+}
+
+
+
+</style>
+
 </head>
 <body background = "panda1.jpg">
 	<div class="row" style="padding-top: 90px">
@@ -29,8 +125,8 @@
 					<div class="row">
 						<div class="col-md-2"></div>
 						<div class="col-md-8" style="padding-bottom: 10px">
-							<span class="login100-form-title p-b-49" >
-								Inicia sesión
+							<span class="login100-form-title p-b-49"  >
+								<h4>Inicia sesión:</h4>
 							</span>
 						</div>
 						<div class="col-md-2"></div>						
@@ -54,8 +150,8 @@
 
 					<div class="row" style="padding-top: 10px; padding-bottom: 10px">
 						<div class="col-md-2"></div>
-						<div class="col-md-8">
-							<div class="text-left p-t-8 p-b-31" >
+						<div class="col-md-8" >
+							<div class="text-left p-t-8 p-b-31" style="text-align: center" >
 						<a href="#">
 							Olvidaste tu contraseña?
 						</a>
@@ -69,7 +165,7 @@
 					
 					<div class="row">
 						<div class="col-md-2"></div>
-						<div class="col-md-8">
+						<div class="col-md-8" style="text-align: center">
 							<button class="btn btn-primary btn-lg btn-block">
 								Entrar
 							</button>
@@ -79,11 +175,11 @@
 
 					<div class="row">
 						<div class="col-md-2"></div>
-						<div class="col-md-2"></div>
-						<div class="col-md-8" >
-							<div class="flex-col-c p-t-155" style="padding-left: 10px">
-						<span class="txt1 p-b-17">
-							No tienes cuenta?
+
+						<div class="col-md-8" style="padding-top: 5px; padding-bottom: 5px; text-align: center">
+							<div class="flex-col-c p-t-155" style="padding-left: 10px ">
+						<span class="txt1 p-b-17">No tienes cuenta?
+
 						</span>
 
 						<a href="#" class="txt2">
