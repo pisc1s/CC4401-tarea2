@@ -21,8 +21,98 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+
+}
+table {
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 35%;
+    alignment: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+  .container {
+      padding: 80px 120px;
+  }
+  /* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #343434;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #fff7ff !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #d194fd !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #b83bf9 !important;
+}
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: #dacbfd !important;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #b462d8;
+}
+a {
+  color: #ad8fcb;
+  text-decoration: none;
+}/* On hover, the links will turn white */
+        a:hover {
+    color: #3f3651 !important;
+}
+
+
+
+</style>
   </head>
   <body>
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -30,44 +120,45 @@
 
           <a class="navbar-brand" href="#">Sistema de Coevaluaciones</a>
         </div>
-        
+
         <div id="navbar" class="navbar-collapse collapse">
+
+
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <button type="button" class="btn btn-default" aria-label="Th List">
-                  <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-              </button>
+                <a href="#" data-toggle="tooltip" title="Salir"><span class="glyphicon glyphicon-log-out" aria-hidden="true" style="size: 50px"></span></a>
+
+
           </ul>
-        </div> 
-      
-      </div> 
+        </div>
+
+      </div>
 
     </nav>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-sm-3 col-md-2 sidebar" style="text-align: center" >
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Perfil</a></li>
-            <li><a href="#">Accion3</a></li>
-            <li><a href="#">Accion4</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Accion5</a></li>
-            <li><a href="">Accion6</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Accion7</a></li>
-            <li><a href="">Accion8</a></li>
-            <li><a href="">Accion9</a></li>
+              <li> <div class="dropdown">
+  <button class="btn  btn-block dropdown-toggle" type="button" data-toggle="dropdown">Mis Cursos:
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" style="margin:0 0 11 0">
+    <li ><a href="#"> CC4401-1 Ingeniería de Software</a></li>
+    <li><a href="#"> CC5012-1 Curso Inventado I</a></li>
+    <li ><a href="#"> CC5012-1 Curso Inventado II</a></li>
+  </ul>
+</div>
+              </li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-      <h1 class="page-header">Perfil del alumno</h1>
+      <h1 class="page-header">J. Pérez</h1>
       <div class="row">
         <div class="wrap">
 
@@ -87,22 +178,22 @@
           <div class="wrap">
             <span>Mail: juanperez@dcc.uchile.cl</span>
           </div>
+             <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-envelope"></span> Contactar
+          </button>
 
-          <!--<button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-pencil"></span> Actualizar contraseña
-          </button>-->
             </div>
   </div>
   </div>
 
 
                 <div class="container-fluid">
-                    <h3>Cursos en común:</h3> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+                    <h3> Cursos compartidos :</h3> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
 
 
             <div class="row list-group-item">
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"> Alumno</span>
 
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -110,48 +201,66 @@
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
-                    <button class="btn btn-link " data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-link miclase" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 
-          <span class="glyphicon glyphicon-chevron-down"></span>
+          <span class="glyphicon glyphicon-chevron-down" style="color:#ce52fd  "></span>
 
                 </button>
 
                 </div>
 
-                <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordion" data-toggle="false">
+                <div id="collapseOne" class="collapse show  " aria-labelledby="headingOne" data-parent="#accordion" data-toggle="false">
               <div class="card-body">
 
               </div>
 
-
                 <table>
-                  <tr>
-                     <td>Coevaluación 1: </td>
-                     <td>6.7</td>
-                  </tr>
-                  <tr>
-                     <td>Coevaluación 2: </td>
-                     <td>5.5</td>
-                  </tr>
-                  <tr>
-                     <td>Coevaluación 3: </td>
-                     <td>6.2</td>
-                  </tr>
-                  </table>
+  <tr>
+    <th>Nombre</th>
+    <th>Nota</th>
+      <th>Media</th>
+      <th>Mediana</th>
+
+  </tr>
+  <tr>
+    <td>Coevaluación 1</td>
+    <td>6.5</td>
+      <td>5.0</td>
+      <td>4.0</td>
+  </tr>
+  <tr>
+    <td>Coevaluación 2</td>
+    <td>5.1</td>
+      <td>5.9</td>
+      <td>3.2</td>
+
+  </tr>
+  <tr>
+    <td>Coevaluación 3</td>
+    <td>7</td>
+      <td>6.7</td>
+      <td>4.6</td>
+
+  </tr>
+
+
                   <script src="Chart.js"></script>
                   <div class="chart-container"><!-- style="position:relative; height:10vh; width:20vw">-->
-                    <canvas id="chart-area" style="width:100%;height:100%"></canvas>
+                    <canvas id="chart-area" style="width:75%;height:75%"></canvas>
                   </div>
+                        </tr>
+                    <tr>
+
                   <script>
                     var lineChartData = {
                       labels : ["Coevaluación 1","Coevaluación 2","Coevaluación 3"],
                       datasets : [
                       {
                       fillColor : "rgba(220,220,220,0.2)",
-                      strokeColor : "#6b9dfa",
-                      pointColor : "#1e45d7",
+                      strokeColor : "#d684f9",
+                      pointColor : "#973493",
                       pointStrokeColor : "#fff",
-                      pointHighlightFill : "#fff",
+                      pointHighlightFill : "#e2e2e2",
                       pointHighlightStroke : "rgba(220,220,220,1)",
                       data : [6.7,5.5,6.2]
                       }
@@ -160,41 +269,13 @@
                   var ctx = document.getElementById("chart-area").getContext("2d");
                   window.myPie = new Chart(ctx).Line(lineChartData, {responsive:true, maintainAspectRatio: false});
                   </script>
-
+                </table>
             </div>
           </div>
 
-            <!--<div class="row list-group-item ">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    Ingeniería de Software II
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <button class="btn btn-link " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <span class="glyphicon glyphicon-chevron-down"></span>
-                </button>
 
-                </div>
 
-            </div>-->
-
-            <div class="row list-group-item">
-                <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    Proyecto de Software
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <button class="btn btn-link " data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <span class="glyphicon glyphicon-chevron-down"></span>
-                </button>
-
-                </div>
       </div>
 
 
